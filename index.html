@@ -2,27 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>InnovaForge Solutions</title>
-    <meta name="description" content="InnovaForge Solutions - Delivering Customized Software Solutions Tailored to Your Needs">
+    <title>InnovaForge Solutions - Cutting-Edge Tech Solutions</title>
+    <meta name="description" content="InnovaForge Solutions - Delivering Innovative and Customized Software Solutions Tailored to Your Business Needs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Meta Tags -->
-    <meta name="keywords" content="Software Development, AI Solutions, Mobile App Development, Affordable Tech Solutions">
+    <meta name="keywords" content="Software Development, AI Solutions, Mobile App Development, Cloud Services, Cybersecurity, IoT, Blockchain, Affordable Tech Solutions">
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="InnovaForge Solutions">
-    <meta property="og:description" content="Delivering Customized Software Solutions Tailored to Your Needs">
+    <meta property="og:title" content="InnovaForge Solutions - Innovative Tech Solutions">
+    <meta property="og:description" content="Empowering businesses with cutting-edge software solutions at competitive prices">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/innovaforge-website/">
-    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://www.innovaforge.com/">
+    <meta property="og:image" content="images/innovaforge-og-image.jpg">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@InnovaForge">
+    <meta name="twitter:title" content="InnovaForge Solutions - Innovative Tech Solutions">
+    <meta name="twitter:description" content="Empowering businesses with cutting-edge software solutions at competitive prices">
+    <meta name="twitter:image" content="images/innovaforge-twitter-image.jpg">
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Preload critical assets -->
+    <link rel="preload" href="fonts/main-font.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="images/hero-bg.jpg" as="image">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "InnovaForge Solutions",
+      "url": "https://www.innovaforge.com",
+      "logo": "https://www.innovaforge.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-123-456-7890",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/InnovaForge",
+        "https://www.twitter.com/InnovaForge",
+        "https://www.linkedin.com/company/innovaforge"
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header Section -->
     <header id="home">
         <nav>
-            <div class="logo">InnovaForge Solutions</div>
+            <div class="logo" aria-label="InnovaForge Solutions">
+                <img src="images/logo.svg" alt="InnovaForge Logo" width="200" height="50">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -30,17 +62,18 @@
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#quote-calculator" class="cta-button">Get a Quote</a></li>
             </ul>
-            <div class="burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <button class="burger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
         <div class="hero-section">
             <h1>Cutting-Edge Tech Solutions, Tailored for You</h1>
             <p>Delivering world-class software solutions at competitive prices.</p>
-            <a href="#contact" class="cta-button">Get a Free Quote</a>
+            <a href="#quote-calculator" class="cta-button">Get an Instant Quote</a>
         </div>
     </header>
 
@@ -51,29 +84,103 @@
             <h2>Our Services</h2>
             <div class="services-container">
                 <div class="service">
+                    <img src="images/custom-software-icon.svg" alt="" aria-hidden="true" loading="lazy">
                     <h3>Custom Software Development</h3>
                     <p>We build scalable and robust software solutions tailored to your business needs.</p>
                 </div>
                 <div class="service">
+                    <img src="images/ai-ml-icon.svg" alt="" aria-hidden="true" loading="lazy">
                     <h3>AI & Machine Learning</h3>
-                    <p>Integrate AI solutions to automate processes and gain insights.</p>
+                    <p>Integrate AI solutions to automate processes and gain valuable insights.</p>
                 </div>
                 <div class="service">
+                    <img src="images/mobile-app-icon.svg" alt="" aria-hidden="true" loading="lazy">
                     <h3>Mobile App Development</h3>
                     <p>Create user-friendly mobile applications for both Android and iOS platforms.</p>
                 </div>
-                <!-- Add more services as needed -->
+                <div class="service">
+                    <img src="images/cloud-services-icon.svg" alt="" aria-hidden="true" loading="lazy">
+                    <h3>Cloud Services</h3>
+                    <p>Leverage cloud technologies for scalable and efficient infrastructure solutions.</p>
+                </div>
+                <div class="service">
+                    <img src="images/cybersecurity-icon.svg" alt="" aria-hidden="true" loading="lazy">
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your digital assets with our advanced cybersecurity solutions.</p>
+                </div>
+                <div class="service">
+                    <img src="images/iot-icon.svg" alt="" aria-hidden="true" loading="lazy">
+                    <h3>Internet of Things (IoT)</h3>
+                    <p>Connect and optimize your devices with our IoT expertise.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Calculator Section -->
+        <section id="quote-calculator">
+            <h2>Get an Instant Quote</h2>
+            <p>Use our calculator to get an approximate quote for your project. We'll provide an exact quote within 24 hours.</p>
+            <form id="quote-form">
+                <div class="form-group">
+                    <label for="service-type">Service Type:</label>
+                    <select id="service-type" required>
+                        <option value="">Select a service</option>
+                        <option value="custom-software">Custom Software Development</option>
+                        <option value="ai-ml">AI & Machine Learning</option>
+                        <option value="mobile-app">Mobile App Development</option>
+                        <option value="cloud-services">Cloud Services</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="iot">Internet of Things (IoT)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="project-size">Project Size:</label>
+                    <select id="project-size" required>
+                        <option value="">Select project size</option>
+                        <option value="small">Small (1-3 months)</option>
+                        <option value="medium">Medium (3-6 months)</option>
+                        <option value="large">Large (6+ months)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="additional-features">Additional Features:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="features" value="database"> Database Integration</label>
+                        <label><input type="checkbox" name="features" value="api"> API Development</label>
+                        <label><input type="checkbox" name="features" value="analytics"> Analytics Dashboard</label>
+                        <label><input type="checkbox" name="features" value="payment"> Payment Gateway</label>
+                    </div>
+                </div>
+                <button type="submit" class="cta-button">Calculate Quote</button>
+            </form>
+            <div id="quote-result" style="display: none;">
+                <h3>Estimated Quote:</h3>
+                <p id="estimated-price"></p>
+                <p>For an exact quote, please fill out the form below and we'll get back to you within 24 hours.</p>
             </div>
         </section>
 
         <!-- About Us Section -->
         <section id="about">
             <h2>About Us</h2>
-            <p>
-                At InnovaForge Solutions, our mission is to empower businesses with innovative tech solutions.
-                Our team of highly skilled developers from IITs in India is dedicated to delivering exceptional
-                results, combining technical expertise with a passion for innovation.
-            </p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        At InnovaForge Solutions, our mission is to empower businesses with innovative tech solutions.
+                        Our team of highly skilled developers from IITs in India is dedicated to delivering exceptional
+                        results, combining technical expertise with a passion for innovation.
+                    </p>
+                    <ul class="about-highlights">
+                        <li>10+ years of industry experience</li>
+                        <li>100+ successful projects delivered</li>
+                        <li>98% client satisfaction rate</li>
+                        <li>24/7 support and maintenance</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="images/team-photo.jpg" alt="InnovaForge Team" width="400" height="300" loading="lazy">
+                </div>
+            </div>
         </section>
 
         <!-- Pricing Section -->
@@ -87,23 +194,41 @@
                         <li>Custom solutions starting at $50/hour</li>
                         <li>Flexible engagement models</li>
                         <li>No hidden fees</li>
+                        <li>Free consultation and quote</li>
                     </ul>
                 </div>
                 <div class="pricing-comparison">
                     <h3>Why Choose Us?</h3>
                     <p>Get world-class services at a fraction of the market rates.</p>
                     <table>
-                        <tr>
-                            <th>Service</th>
-                            <th>Market Rate</th>
-                            <th>Our Rate</th>
-                        </tr>
-                        <tr>
-                            <td>Software Development</td>
-                            <td>$100/hour</td>
-                            <td>$50/hour</td>
-                        </tr>
-                        <!-- Add more comparisons as needed -->
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Market Rate</th>
+                                <th>Our Rate</th>
+                                <th>Savings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Software Development</td>
+                                <td>$100/hour</td>
+                                <td>$50/hour</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>AI & ML Solutions</td>
+                                <td>$150/hour</td>
+                                <td>$75/hour</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile App Development</td>
+                                <td>$120/hour</td>
+                                <td>$60/hour</td>
+                                <td>50%</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -111,22 +236,84 @@
 
         <!-- Portfolio Section -->
         <section id="portfolio">
-            <h2>Our Potential</h2>
-            <p>We are eager to showcase our expertise. Stay tuned for updates on our latest projects.</p>
-            <!-- Placeholder for future portfolio items -->
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/project1-thumbnail.jpg" alt="E-commerce Platform" width="300" height="200" loading="lazy">
+                    <h3>E-commerce Platform</h3>
+                    <p>A scalable online marketplace built with React and Node.js</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project2-thumbnail.jpg" alt="AI-powered Chatbot" width="300" height="200" loading="lazy">
+                    <h3>AI-powered Chatbot</h3>
+                    <p>An intelligent customer service solution using natural language processing</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project3-thumbnail.jpg" alt="IoT Smart Home App" width="300" height="200" loading="lazy">
+                    <h3>IoT Smart Home App</h3>
+                    <p>A mobile app for controlling and monitoring smart home devices</p>
+                </div>
+            </div>
+            <a href="#" class="cta-button">View More Projects</a>
         </section>
 
         <!-- Testimonials Section -->
         <section id="testimonials">
-            <h2>Testimonials</h2>
-            <p>Coming soon! We look forward to sharing feedback from our satisfied clients.</p>
-            <!-- Placeholder for future testimonials -->
+            <h2>Client Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <blockquote>
+                        "InnovaForge delivered an outstanding e-commerce platform that exceeded our expectations. Their team was professional, responsive, and truly cared about our success."
+                    </blockquote>
+                    <cite>- John Doe, CEO of TechRetail</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        "The AI solution provided by InnovaForge has revolutionized our customer service. We've seen a 40% increase in customer satisfaction since implementation."
+                    </blockquote>
+                    <cite>- Jane Smith, CTO of ServicePro</cite>
+                </div>
+            </div>
         </section>
 
         <!-- Contact Us Section -->
         <section id="contact">
             <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="contact-container">
+                <form action="https://formspree.io/f/mkgwazap" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="_replyto" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="project-details">Project Details</label>
+                        <textarea id="project-details" name="project-details" required aria-required="true"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget</label>
+                        <select id="budget" name="budget" required aria-required="true">
+                            <option value="">Select a range</option>
+                            <option value="0-5000">$0 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000-25000">$10,000 - $25,000</option>
+                            <option value="25000+">$25,000+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="cta-button">Request Exact Quote</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Email: <a href="mailto:contact@innovaforge.com">contact@innovaforge.com</a></p>
+                    <p>Phone: <a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+            <form action="https://formspree.io/f/mkgwazap" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required aria-required="true">
